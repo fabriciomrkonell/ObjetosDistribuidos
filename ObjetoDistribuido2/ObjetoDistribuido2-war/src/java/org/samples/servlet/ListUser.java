@@ -28,24 +28,34 @@ public class ListUser extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ListRole</title>");            
+            out.println("<link rel='stylesheet' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>");
+            out.println("<title>List User</title>");            
             out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Users:</h1>");
-            out.println("<table>");
+            out.println("<body>");            
+            out.println("<div class='container' style='margin-top: 20px'>");
+            out.println("<div class='row'>");            
+            out.println("<div class='col-sm-12'>");
+            out.println("<div class='text-center'>");
+            out.println("<marquee><h1>Users</h1>");
+            out.println("</marquee>");
+            out.println("</div>");
+            out.println("<table class='table table-condensed table-bordered'>");
             out.println("<thead>");
             out.println("<tr>");
-            out.println("<th>ID</th>");
-            out.println("<th>Nome</th>");
+            out.println("<th style='text-align: center'>ID</th>");
+            out.println("<th style='text-align: center'>Nome</th>");
             out.println("</tr>");
             out.println("</thead>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("</div>");
             out.println("<tbody>");            
             User o;
             for (int i = 0; i < users.size(); i++) {
                 o = (User) users.get(i);
                 out.println("<tr style='text-align: center'>");
-                out.println("<td>" + o.getId() +"</td>");
-                out.println("<td>" + o.getName() + "</td>");
+                out.println("<td style='text-align: center'>" + o.getId() +"</td>");
+                out.println("<td style='text-align: center'>" + o.getName() + "</td>");
                 out.println("</tr>");
                 
             }

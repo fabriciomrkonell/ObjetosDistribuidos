@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package org.samples.servlet;
 
 import java.io.IOException;
@@ -19,10 +13,6 @@ import org.samples.controller.RoleFacadeLocal;
 import org.samples.entities.Role;
 
 
-/**
- *
- * @author fabricio.konell
- */
 @WebServlet(name = "ListRole", urlPatterns = {"/ListRole"})
 public class ListRole extends HttpServlet {
 
@@ -36,20 +26,28 @@ public class ListRole extends HttpServlet {
                     
             response.setContentType("text/html;charset=UTF-8");
             PrintWriter out = response.getWriter();
-            out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
+            out.println("<link rel='stylesheet' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>");
             out.println("<title>Servlet ListRole</title>");            
             out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Regras:</h1>");
-            out.println("<table>");
+            out.println("<body>");            
+            out.println("<div class='container' style='margin-top: 20px'>");
+            out.println("<div class='row'>");            
+            out.println("<div class='col-sm-12'>");
+            out.println("<div class='text-center'>");
+            out.println("<marquee><h1>Regras</h1></marquee>");
+            out.println("</div>");
+            out.println("<table class='table table-condensed table-bordered'>");
             out.println("<thead>");
             out.println("<tr>");
-            out.println("<th>ID</th>");
-            out.println("<th>Nome</th>");
+            out.println("<th style='text-align: center'>ID</th>");
+            out.println("<th style='text-align: center'>Nome</th>");
             out.println("</tr>");
             out.println("</thead>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("</div>");
             out.println("<tbody>");            
             Role o;
            for (int i = 0; i < roles.size(); i++) {
