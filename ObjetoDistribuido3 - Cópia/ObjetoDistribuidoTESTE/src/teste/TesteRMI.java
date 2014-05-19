@@ -6,16 +6,18 @@
 
 package teste;
 
+import entities.User;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import remote.UserFacadeRemote;
+import remote.UserBeanRemote;
+
 
 public class TesteRMI {
      private static final String JNDI_NAME
-            = "java:global/ObjetoDistribuido3/ObjetoDistribuido3-ejb/UserFacade";
+            = "java:global/ObjetoDistribuido3/ObjetoDistribuido3-ejb/UserBean";
 
     public static void main(String[] args) {
 
@@ -39,8 +41,8 @@ public class TesteRMI {
             props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
 
             ctx = new InitialContext(props);
-            UserFacadeRemote userRemote = (UserFacadeRemote) ctx.lookup(JNDI_NAME);           
-            userRemote.findAll();
+            UserBeanRemote userBean = (UserBeanRemote) ctx.lookup(JNDI_NAME);           
+            userBean.findUserEntities();            
         } catch (NamingException ex) {
             Logger.getLogger(TesteRMI.class.getName()).log(Level.SEVERE, null, ex);
         }
