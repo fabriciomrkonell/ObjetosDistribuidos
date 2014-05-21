@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projeto%20Dippold%20-%20BKP/SorteadorEAR/SorteadorEAR-ejb/src/java/org/ftd/samples/ejb/remote/UserFacade.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projeto%20Dippold%20-%20BKP/SorteadorEAR/SorteadorEAR-ejb/src/java/org/ftd/samples/ejb/remote/SorteadorBean.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projeto%20Dippold%20-%20BKP/SorteadorEAR/SorteadorEAR-ejb/src/conf/persistence.xml</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projeto%20Dippold%20-%20BKP/SorteadorEAR/SorteadorEAR-ejb/src/java/org/ftd/samples/ejb/remote/AbstractFacade.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido3/SorteadorEAR/SorteadorEAR-ejb/src/java/org/ftd/samples/ejb/remote/UserFacade.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido3/SorteadorEAR/SorteadorEAR-ejb/src/java/org/ftd/samples/ejb/remote/AbstractFacade.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido3/SorteadorEAR/SorteadorEAR-ejb/src/java/org/ftd/samples/ejb/remote/RoleFacade.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido3/SorteadorEAR/SorteadorEAR-ejb/src/conf/persistence.xml</file>
         </group>
     </open-files>
 </project-private>

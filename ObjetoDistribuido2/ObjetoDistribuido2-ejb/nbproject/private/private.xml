@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/entities/User.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/AbstractFacade.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/entities/Role.java</file>
             <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/RoleController.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/AbstractFacade.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/entities/User.java</file>
         </group>
     </open-files>
 </project-private>

@@ -6,9 +6,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import org.ftd.samples.ejb.entities.User;
-import org.ftd.samples.ejb.remote.SorteadorBeanRemote;
-import org.ftd.samples.ejb.remote.UserFacadeRemote;
+import org.ftd.samples.ejb.entities.Role;
+import org.ftd.samples.ejb.remote.RoleFacadeRemote;
 
 /**
  *
@@ -18,7 +17,7 @@ import org.ftd.samples.ejb.remote.UserFacadeRemote;
 public class TestarRMI {
 
     private static final String JNDI_NAME
-            = "java:global/SorteadorEAR/SorteadorEAR-ejb/UserFacade";
+            = "java:global/SorteadorEAR/SorteadorEAR-ejb/RoleFacade";
 
     public static void main(String[] args) {
 
@@ -41,20 +40,29 @@ public class TestarRMI {
             // optional.  Defaults to 3700.  Only needed if target orb port is not 3700.
             props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
 
-            ctx = new InitialContext(props);
-            //SorteadorBeanRemote sorteadorBean = (SorteadorBeanRemote) ctx.lookup(JNDI_NAME);
-            //System.out.println(sorteadorBean.sortear());
+            ctx = new InitialContext(props);            
             
-            UserFacadeRemote user = (UserFacadeRemote) ctx.lookup(JNDI_NAME);    
-            List<User> listuser = user.findAll();
+//            UserFacadeRemote user = (UserFacadeRemote) ctx.lookup(JNDI_NAME);    
+//            List<User> listuser = user.findAll();
+//            
+//            User o;
+//            System.out.println("---Imprimindo Usuários---");
+//            for (int i = 0; i < listuser.size(); i++) {
+//                o = (User) listuser.get(i);
+//                System.out.println("ID: " + o.getId() + " - Nome: " + o.getName());
+//                
+//            }  
             
-            User o;
-            System.out.println("---Imprimindo Usuários---");
-            for (int i = 0; i < listuser.size(); i++) {
-                o = (User) listuser.get(i);
+            RoleFacadeRemote role = (RoleFacadeRemote) ctx.lookup(JNDI_NAME);    
+            List<Role> listrole = role.findAll();
+            
+            Role o;
+            System.out.println("---Imprimindo Regras---");
+            for (int i = 0; i < listrole.size(); i++) {
+                o = (Role) listrole.get(i);
                 System.out.println("ID: " + o.getId() + " - Nome: " + o.getName());
                 
-            }                               
+            }  
             
         } catch (NamingException ex) {
             Logger.getLogger(TestarRMI.class.getName()).log(Level.SEVERE, null, ex);
