@@ -17,7 +17,9 @@ public interface UserFacadeRemote {
     User find(Object id);
 
     List<User> findAll();
-
+    
+    void falar();     
+    
     List<User> findRange(int[] range);
 
     int count();

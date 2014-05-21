@@ -24,7 +24,7 @@ public class Teste {
         props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
         ctx = new InitialContext(props);
         UserFacadeRemote userRemote = (UserFacadeRemote) ctx.lookup(JNDI_NAME);
-        //List<User> listUser = userRemote.findAll();
+        userRemote.falar();
     }
     
 }

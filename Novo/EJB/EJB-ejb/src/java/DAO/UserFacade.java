@@ -7,7 +7,7 @@
 package DAO;
 
 import entities.User;
-import javax.ejb.Stateless;
+import javax.ejb.Remote;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -15,18 +15,38 @@ import javax.persistence.PersistenceContext;
  *
  * @author fabricio.konell
  */
-@Stateless
+@Remote(UserFacadeRemote.class)
 public class UserFacade extends AbstractFacade<User> implements UserFacadeRemote {
     @PersistenceContext(unitName = "EJB-ejbPU")
     private EntityManager em;
 
     @Override
-    protected EntityManager getEntityManager() {
+    public EntityManager getEntityManager() {
         return em;
     }
 
     public UserFacade() {
         super(User.class);
     }   
+
+    @Override
+    public void create(User user) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void edit(User user) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void remove(User user) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void falar() {
+        System.out.println("FAbricio");
+    }
     
 }

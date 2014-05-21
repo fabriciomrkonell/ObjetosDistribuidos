@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package DAO;
+package org.ftd.samples.ejb.remote;
 
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -14,25 +14,23 @@ import javax.persistence.EntityManager;
  * @author fabricio.konell
  */
 public abstract class AbstractFacade<T> {
-
     private Class<T> entityClass;
-   
 
     public AbstractFacade(Class<T> entityClass) {
         this.entityClass = entityClass;
     }
-    
-    public abstract EntityManager getEntityManager();
 
-    public void salvar(T entity) {
+    protected abstract EntityManager getEntityManager();
+
+    public void create(T entity) {
         getEntityManager().persist(entity);
     }
 
-    public void editar(T entity) {
+    public void edit(T entity) {
         getEntityManager().merge(entity);
     }
 
-    public void excluir(T entity) {
+    public void remove(T entity) {
         getEntityManager().remove(getEntityManager().merge(entity));
     }
 
