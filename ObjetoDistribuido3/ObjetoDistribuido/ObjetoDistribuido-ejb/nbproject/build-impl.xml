@@ -781,12 +781,12 @@ exists or setup the property manually. For example like this:
                 COMPILATION SECTION
             -->
     <target depends="init" if="no.dist.ear.dir" name="-deps-module-jar" unless="no.deps">
-        <ant antfile="${project.ObjetoDistribuido3INTERFACE}/build.xml" inheritall="false" target="jar">
+        <ant antfile="${project.Interfaces}/build.xml" inheritall="false" target="jar">
             <property name="deploy.on.save" value="false"/>
         </ant>
     </target>
     <target depends="init" if="dist.ear.dir" name="-deps-ear-jar" unless="no.deps">
-        <ant antfile="${project.ObjetoDistribuido3INTERFACE}/build.xml" inheritall="false" target="jar">
+        <ant antfile="${project.Interfaces}/build.xml" inheritall="false" target="jar">
             <property name="deploy.on.save" value="false"/>
         </ant>
     </target>
@@ -801,17 +801,17 @@ exists or setup the property manually. For example like this:
     </target>
     <target depends="compile,-library-inclusion-in-archive-weblogic,-library-inclusion-in-archive-by-user" name="library-inclusion-in-archive"/>
     <target if="is.jars.in.ejbjar" name="-library-inclusion-in-archive-by-user">
-        <copyfiles files="${reference.ObjetoDistribuido3INTERFACE.jar}" todir="${build.classes.dir}"/>
+        <copyfiles files="${reference.Interfaces.jar}" todir="${build.classes.dir}"/>
     </target>
     <target if="is.server.weblogic" name="-library-inclusion-in-archive-weblogic">
-        <basename file="${reference.ObjetoDistribuido3INTERFACE.jar}" property="manifest.reference.ObjetoDistribuido3INTERFACE.jar"/>
+        <basename file="${reference.Interfaces.jar}" property="manifest.reference.Interfaces.jar"/>
         <manifest file="${build.ear.classes.dir}/META-INF/MANIFEST.MF" mode="update">
             <attribute name="Extension-List" value="jar-1 "/>
-            <attribute name="jar-1-Extension-Name" value="${manifest.reference.ObjetoDistribuido3INTERFACE.jar}"/>
+            <attribute name="jar-1-Extension-Name" value="${manifest.reference.Interfaces.jar}"/>
         </manifest>
     </target>
     <target depends="compile" name="library-inclusion-in-manifest">
-        <copyfiles files="${reference.ObjetoDistribuido3INTERFACE.jar}" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${reference.Interfaces.jar}" todir="${dist.ear.dir}/lib"/>
         <manifest file="${build.ear.classes.dir}/META-INF/MANIFEST.MF" mode="update"/>
     </target>
     <target name="-copy-meta-inf">
@@ -1195,7 +1195,7 @@ exists or setup the property manually. For example like this:
                 CLEANUP SECTION
             -->
     <target depends="init" name="deps-clean" unless="no.deps">
-        <ant antfile="${project.ObjetoDistribuido3INTERFACE}/build.xml" inheritall="false" target="clean"/>
+        <ant antfile="${project.Interfaces}/build.xml" inheritall="false" target="clean"/>
     </target>
     <target depends="init" name="-do-clean">
         <delete dir="${build.dir}"/>

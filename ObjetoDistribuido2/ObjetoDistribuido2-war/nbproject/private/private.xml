@@ -2,19 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/AddRoleUser.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/web/index.html</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/AddUserRole.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/RemoveUser.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/ListUser.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/ListRole.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/AddUser.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/AddRole.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/RemoveRoleUser.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/RemoveUserRole.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/ListUserRole.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-war/src/java/org/samples/servlet/RemoveRole.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

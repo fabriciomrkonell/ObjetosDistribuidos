@@ -3,19 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/entities/Role.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/exceptions/PreexistingEntityException.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/UserRoleFacadeLocal.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/RoleFacadeLocal.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/RoleController.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/AbstractFacade.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/UserFacadeLocal.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/entities/UserRole.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/UserFacade.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/conf/persistence.xml</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/exceptions/IllegalOrphanException.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/entities/User.java</file>
-            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/UserRoleFacade.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/RoleController.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/controller/AbstractFacade.java</file>
+            <file>file:/C:/Users/fabricio.konell/Desktop/Projetos/ObjetosDistribuidos/ObjetoDistribuido2/ObjetoDistribuido2-ejb/src/java/org/samples/entities/User.java</file>
         </group>
     </open-files>
 </project-private>
